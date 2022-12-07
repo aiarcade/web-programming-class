@@ -1,0 +1,18 @@
+CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'mypass';
+GRANT ALL ON *.* TO 'myuser'@'localhost';
+FLUSH PRIVILEGES;
+CREATE DATABASE fisat;
+
+
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+
+insert into Persons values( 1, "Mahesh","c","Alappuzha","Alappuzha");
+insert into Persons values( 2, "Jayaram","J","Alappuzha","Alappuzha");
+insert into Persons values( 3, "Raj","R","Angamaly","EKM");
+insert into Persons values( 4, "Nisha","H","Angamaly","EKM");
